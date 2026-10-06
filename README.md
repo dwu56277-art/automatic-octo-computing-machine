@@ -123,3 +123,8 @@ All paid API calls may consume GoAnyAPI credits. Credit prices are controlled by
 - [SERP API](https://goanyapi.com/docs/serp-api)
 - [Backlinks API](https://goanyapi.com/docs/backlink-api)
 - [Keyword APIs](https://goanyapi.com/docs/keyword-difficulty-api)
+
+
+## Live integration tests
+
+To test the actual GoAnyAPI service, configure `GOANYAPI_API_KEY` and run `npm run test:integration -- --confirm-paid`. Live checks may consume credits; without `--confirm-paid`, the script sends no requests. Use `--free-only` to verify the key and free credit-balance endpoint only. See [INTEGRATION_TESTING.md](./INTEGRATION_TESTING.md) for details.
